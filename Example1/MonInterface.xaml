@@ -1,0 +1,41 @@
+<Controls:MetroWindow
+xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="PS1 WPF - DatePicker 1" 		
+Name="MainPanel" 
+Height="200" 
+Width="350" 
+WindowStartupLocation="CenterScreen"
+ResizeMode="NoResize"
+WindowStyle="None" 		
+BorderBrush="Blue"
+>  
+
+	<Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="resources\Icons.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Cobalt.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>	
+
+
+<Grid>
+	<StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+		<DatePicker Height="25" Name="datePicker1" Width="305" Margin="0,0,0,0" 
+			SelectedDateFormat="Long" 
+			DisplayDate="3/1/2020"  
+			DisplayDateStart="1/1/2020"  
+			DisplayDateEnd="12/31/2020"  
+			FirstDayOfWeek="Tuesday"  
+			IsTodayHighlighted="True">
+		</DatePicker>																
+	</StackPanel>	
+</Grid>
+</Controls:MetroWindow>        
